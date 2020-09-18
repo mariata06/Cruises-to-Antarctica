@@ -1,8 +1,4 @@
 .page-header {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
   //background-color: green;
   margin: 0 auto;
   //display: flex;
@@ -14,35 +10,106 @@
   background-repeat: no-repeat;
   //background-size: 192px, 320px;
   //background-position: 0 -74px;
-  background-clip: border-box;
+  //background-clip: border-box;
+  background-size: cover;
   position: relative;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro-desktop@2x.jpg");
+  }
+
+  /* для резины
   @media (min-width: 1024px) and (max-width: 1700px) {
     padding: 30px 45px 30px 45px;
   }
-
+  */
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    background-image: url("../img/intro-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $max-mobile-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    background-image: url("../img/intro-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-mobile@2x.jpg");
+    }
   }
 }
 
 .page-header__menu {
+  padding-top: 35px;
+  padding-bottom: 283px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 210px;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    width: 100%;
+    padding: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &--nojs {
+    @media (max-width: $max-mobile-width) {
+      width: 100%;
+      background-color: $white;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 45px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .page-header__mobile-menu {
   display: none;
 
   @media (max-width: $max-mobile-width) {
-    display: block;
+    width: 50%;
+    align-self: flex-end;
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.page-header__intro {
+  color: $white;
+  padding-left: 95px;
+
+  h1 {
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.page-header__burger-menu {
+  @media (max-width: $max-mobile-width) {
+    display: none;
   }
 }
