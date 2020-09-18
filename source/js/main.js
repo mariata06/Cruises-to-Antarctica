@@ -7,27 +7,32 @@ var mobileMenu = document.querySelector(".site-nav");
 var closeButton = document.querySelector(".page-header__mobile-menu-close");
 var whiteLogo = document.querySelector(".logo--white");
 var blueLogo = document.querySelector(".logo--blue");
+var headerMenu = document.querySelector(".page-header__menu");
 //console.log(mobileLogo);
 
-mobileMenu.classList.add("site-nav--hide"); // спрятанное моб меню при работающем js
+mobileMenu.classList.add("site-nav--hide"); // спрятанная навигация при работающем js
+headerMenu.classList.remove("page-header__menu--nojs"); // меню на синем фоне при работающем js
 buttonBurger.classList.remove("page-header__mobile-menu-burger--nojs");
 closeButton.classList.remove("page-header__mobile-menu-close--nojs");
 whiteLogo.classList.remove("logo--white--nojs");
+blueLogo.classList.add("logo--blue--nojs");
 //console.log("text");
 
 buttonBurger.addEventListener("click", function (evt) {
   evt.preventDefault();
   mobileMenu.classList.toggle("site-nav--hide");
   mobileMenu.classList.add("site-nav--show");
-  buttonBurger.classList.add("page-header__mobiel-menu-burger--hide");
+  buttonBurger.classList.add("page-header__mobile-menu-burger--hide");
   closeButton.classList.add("page-header__mobile-menu-close--show");
 });
 
 closeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mobileMenu.classList.toggle("site-nav--hide");
-  mobileMenu.classList.add("site-nav--show");
+  //mobileMenu.classList.toggle("site-nav--hide");
+  mobileMenu.classList.remove("site-nav--show");
+  mobileMenu.classList.add("site-nav--hide");
   buttonBurger.classList.remove("page-header__mobile-menu-burger--hide");
+  whiteLogo.classList.remove("logo--white--hide")
   closeButton.classList.remove("page-header__mobile-menu-close--show");
 });
 
