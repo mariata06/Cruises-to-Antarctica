@@ -1,0 +1,11 @@
+.page-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0 auto;
+  }
+}

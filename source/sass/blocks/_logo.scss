@@ -1,0 +1,9 @@
+.logo {
+  &--blue {
+    display: none;
+
+    @media (max-width: $max-mobile-width) {
+      display: block;
+    }
+  }
+}

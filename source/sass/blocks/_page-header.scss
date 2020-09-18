@@ -1,0 +1,48 @@
+.page-header {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  //background-color: green;
+  margin: 0 auto;
+  //display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //justify-content: space-between;
+  background-color: $blue;
+  background-image: url("../img/intro-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  //background-size: 192px, 320px;
+  //background-position: 0 -74px;
+  background-clip: border-box;
+  position: relative;
+
+  @media (min-width: 1024px) and (max-width: 1700px) {
+    padding: 30px 45px 30px 45px;
+  }
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__mobile-menu {
+  display: none;
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+  }
+}

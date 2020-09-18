@@ -1,0 +1,24 @@
+//COLOR VARIABLES
+$dark-blue: #011c40; //основной цвет шрифта темно-синий
+$white: #ffffff; //основной цвет шрифта белый
+$grey: #e5e5e5; //цвет body
+$blue: #1e90ff; //заменяющий цвет фонов
+$salmon-pink: #fe7865; // акцентный основной
+$salmon-orange: #f17d4b; // акцентный при наведении
+$dark: #2c2e3f; // темный
+$very-dark: #141517; // темный самый темный
+$light: #f8f8f8; // светлый
+$dark-1: #2c2e3f; // цвет текста на десктопе
+$white: #ffffff; // цвет текста на странице
+$grey: #e5e5e5; // цвет для body
+$light-blue: #add8e6; // основной цвет фона под фоновым изображением
+$color-line: #d7d9df; // цвет разделяющих линий
+
+$max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
+$max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)
+$min-tablet-width: 768px;
+$min-mobile-width: 320px;
+
+//RETINA VARIABLES
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
