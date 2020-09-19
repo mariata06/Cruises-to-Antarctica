@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   background-color: $grey;
+  overflow-x: hidden;
 }
 
 *,
@@ -38,6 +39,7 @@ img {
 a {
   text-decoration: none;
   color: $very-dark;
+  cursor: pointer;
 }
 
 button {

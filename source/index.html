@@ -662,7 +662,7 @@
             Раннее бронирование
           </h2>
           <p>
-            Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%
+            Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%
           </p>
         </div>
         <div class="booking__form">
@@ -670,16 +670,24 @@
             <p>
               Оставьте заявку и мы свяжемся с вами в ближайшее время
             </p>
-            <label for="name">
-              <input id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
-            <label for="phone">
-              <input id="phone" type="tel" name="user-phonenumber" value="" required=""
-                placeholder="89236889975"></label>
-            <label for="email">
-              <input id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com"
-                required=""></label>
-            <input type="checkbox" id="personal-data" name="personal-data" class="visually-hidden" checked="">
-            <label for="personal-data">Я согласен на обработку моих персональных данных</label>
+            <div class="booking__form-field">
+              <label for="name">
+                <input id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
+            </div>
+            <div class="booking__form-field">
+              <label for="phone">
+                <input id="phone" type="tel" name="user-phonenumber" value="" required="" placeholder="89236889975"
+                  pattern="[0-9]{11}"></label>
+            </div>
+            <div class="booking__form-field">
+              <label for="email">
+                <input id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com"
+                  required=""></label>
+            </div>
+            <div class="booking__form-field">
+              <input type="checkbox" id="personal-data" name="personal-data" class="visually-hidden" checked="">
+              <label for="personal-data">Я согласен на обработку моих персональных данных</label>
+            </div>
             <button type="submit">Оставить заявку</button>
           </form>
         </div>
