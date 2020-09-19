@@ -13,7 +13,7 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     padding: 100px 45px;
-    background-image: url("../img/advantages-tables@1x.jpg");
+    background-image: url("../img/advantages-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantages-tablet@2x.jpg");

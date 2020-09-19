@@ -1,0 +1,132 @@
+.tours {
+  padding: 120px 118px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    padding: 100px 60px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 65px 25px;
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      font-size: 26px;
+      line-height: 39px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}
+
+.tours__item {
+  margin-bottom: 30px;
+
+  &:hover {
+    .tours__description {
+      opacity: 1;
+      transition: 0.7s ease-out;
+    }
+
+    h3 {
+      top: 20px;
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.tours__content {
+  position: relative;
+  color: $white;
+  width: 100%;
+  height: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    margin: 0;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+  }
+}
+
+.tours__description {
+  padding: 55px 25px 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-blue;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    color: $dark-blue;
+    background-color: $white;
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-self: flex-end;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    &:nth-child(odd) {
+      font-weight: 500;
+    }
+
+    &:nth-child(even) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tours__img {
+  display: block;
+  width: 260px;
+  height: 100%;
+  padding: 0;
+  //object-fit: cover;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    width: 309px;
+    height: 100%;
+    //object-fit: cover;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 270px;
+  }
+}

@@ -47,3 +47,21 @@
     }
   }
 }
+
+.travels__img {
+  @media (max-width: $max-mobile-width) {
+    margin: 0 auto;
+  }
+
+  img {
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      width: 324px;
+      height: 264px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 290px;
+      height: 186px;
+    }
+  }
+}
