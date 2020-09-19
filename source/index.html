@@ -665,63 +665,68 @@
             Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%
           </p>
         </div>
-        <div class="booking__form">
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
               Оставьте заявку и мы свяжемся с вами в ближайшее время
             </p>
-            <div class="booking__form-field">
+            <div>
               <label for="name">
                 <input id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
             </div>
-            <div class="booking__form-field">
+            <div>
               <label for="phone">
                 <input id="phone" type="tel" name="user-phonenumber" value="" required="" placeholder="89236889975"
                   pattern="[0-9]{11}"></label>
             </div>
-            <div class="booking__form-field">
+            <div>
               <label for="email">
                 <input id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com"
                   required=""></label>
             </div>
-            <div class="booking__form-field">
+            <div>
               <input type="checkbox" id="personal-data" name="personal-data" class="visually-hidden" checked="">
               <label for="personal-data">Я согласен на обработку моих персональных данных</label>
             </div>
             <button type="submit">Оставить заявку</button>
           </form>
-        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">
           Наши контакты
         </h2>
-        <div class="contacts__map">
+        <a href="#" class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px-->
+            <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" alt="Карта проезда" width="560"
+              height="306">
+          </picture>
           <svg width="18" height="22">
             <use xlink:href="img/sprite.svg#icon-pin"></use>
           </svg>
-        </div>
+        </a>
         <div class="contacts__text">
           <p>
-            У вас ещё остались вопросы или сомнения?
+            У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.
           </p>
-          <p>
-            Приезжайте к нам в офис и мы вам все расскажем.
-          </p>
-        </div>
-        <div class="contacts__info">
-          <p>
-            <svg width="18" height="22">
-              <use xlink:href="img/sprite.svg#icon-ship"></use>
-            </svg>
-            г. Санкт Петербург, ул. Большая Конюшенная, 19/8
-          </p>
-          <p>
-            <svg width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
-            </svg>
-            8-800-200-00-00
-          </p>
+          <div class="contacts__info">
+            <p>
+              <svg width="18" height="22">
+                <use xlink:href="img/sprite.svg#icon-pin"></use>
+              </svg>
+              г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
+            </p>
+            <p>
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              8-800-200-00-00
+            </p>
+          </div>
         </div>
       </section>
     </main>
