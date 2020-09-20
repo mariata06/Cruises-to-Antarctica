@@ -15,7 +15,7 @@ headerMenu.classList.remove("page-header__menu--nojs"); // меню на син�
 buttonBurger.classList.remove("page-header__mobile-menu-burger--nojs");
 closeButton.classList.remove("page-header__mobile-menu-close--nojs");
 whiteLogo.classList.remove("logo--white--nojs");
-blueLogo.classList.add("logo--blue--nojs");
+blueLogo.classList.remove("logo--blue--nojs");
 //console.log("text");
 
 buttonBurger.addEventListener("click", function (evt) {
@@ -24,6 +24,9 @@ buttonBurger.addEventListener("click", function (evt) {
   mobileMenu.classList.add("site-nav--show");
   buttonBurger.classList.add("page-header__mobile-menu-burger--hide");
   closeButton.classList.add("page-header__mobile-menu-close--show");
+  headerMenu.classList.add("page-header__menu--show");
+  whiteLogo.classList.add("logo--white--hide");
+  blueLogo.classList.add("logo--blue--show");
 });
 
 closeButton.addEventListener("click", function (evt) {
@@ -31,8 +34,10 @@ closeButton.addEventListener("click", function (evt) {
   //mobileMenu.classList.toggle("site-nav--hide");
   mobileMenu.classList.remove("site-nav--show");
   mobileMenu.classList.add("site-nav--hide");
+  headerMenu.classList.remove("page-header__menu--show");
   buttonBurger.classList.remove("page-header__mobile-menu-burger--hide");
-  whiteLogo.classList.remove("logo--white--hide")
+  whiteLogo.classList.remove("logo--white--hide");
+  blueLogo.classList.remove("logo--blue--show");
   closeButton.classList.remove("page-header__mobile-menu-close--show");
 });
 

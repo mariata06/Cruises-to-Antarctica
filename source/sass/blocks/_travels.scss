@@ -17,11 +17,9 @@
 .travels__text {
   width: 560px;
 
-  /*
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    width: 324px;
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    padding-right: 50px;
   }
-  */
 
   h2 {
     font-size: 28px;

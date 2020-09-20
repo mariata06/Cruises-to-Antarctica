@@ -43,6 +43,20 @@
       background-image: url("../img/intro-mobile@2x.jpg");
     }
   }
+
+  .logo {
+    &--white {
+      @media (max-width: $max-mobile-width) {
+        &--hide {
+          display: none;
+        }
+
+        &--nojs {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .page-header__menu {
@@ -67,6 +81,17 @@
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 143px;
+    //position: absolute;
+
+    &--show {
+      width: 100%;
+      background-color: $white;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 45px;
+      margin-bottom: 0;
+    }
 
     &--nojs {
       width: 100%;
@@ -104,6 +129,7 @@
     font-size: 54px;
     line-height: 66px;
     font-weight: 700;
+    margin: 0;
 
     @media (max-width: $max-mobile-width) {
       font-size: 36px;
