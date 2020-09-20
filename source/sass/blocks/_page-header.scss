@@ -161,3 +161,20 @@
     }
   }
 }
+
+.page-header__logo {
+  @media (max-width: $max-mobile-width) {
+    display: block;
+    width: 50%;
+    align-self: flex-start;
+    order: 1;
+
+    &--nojs {
+      display: none;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
+}

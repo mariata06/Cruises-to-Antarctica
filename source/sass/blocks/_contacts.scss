@@ -2,8 +2,6 @@
   padding: 120px 103px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     padding: 100px 45px;
@@ -11,14 +9,24 @@
 
   @media (max-width: $max-mobile-width) {
     padding: 65px 15px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
 
 .contacts__map {
   position: relative;
+  background-color: $blue;
+  height: 306px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 50%;
+  }
+
+  img {
+    @media (max-width: $max-mobile-width) {
+      width: 290px;
+    }
   }
 
   svg {

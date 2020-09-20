@@ -1,0 +1,115 @@
+.page-footer {
+  padding: 50px 103px;
+  background-color: $dark-blue;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 40px 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  a {
+    color: $white;
+    line-height: 20px;
+    font-weight: 500;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.page-footer__social-list {
+  min-width: 86px;
+  max-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  margin-left: auto;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    display: flex;
+    align-items: center;
+    max-width: 130px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-left: 0;
+  }
+
+  li {
+    margin-left: 33px;
+    display: flex;
+    align-self: center;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      margin-left: 23px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-left: 0;
+      margin-right: 23px;
+    }
+  }
+
+  svg {
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      transform: scale(0.8);
+    }
+  }
+}
+
+
+.page-footer__logo {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  img {
+    @media (max-width: $max-mobile-width) {
+      width: 42px;
+      height: 22px;
+    }
+  }
+}
+
+.page-footer__nav {
+  color: $white;
+  width: 594px;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: 40px;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    width: 441px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  li {
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 23px;
+    }
+  }
+}
