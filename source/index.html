@@ -13,16 +13,6 @@
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/main.js" as="script">
   <link rel="stylesheet" href="css/style.min.css">
-  <!--
-<script>
-        // Picture element HTML5 shiv
-        document.createElement("picture");
-    </script>
-    <script src="js/picturefill.min.js" async=""></script>
-    <script src="js/svg4everybody.min.js" async=""></script>
-    -->
-
-
 </head>
 
 <body>
@@ -45,12 +35,14 @@
           </picture>
         </div>
         <div class="page-header__logo logo logo--blue logo--blue--nojs">
-          <picture>
-            <!--<source srcset="img/logo-blue-mobile.svg" media="(max-width: 767px)">
-                      <source srcset="img/logo-tablet.svg" media="(max-width: 1023px)">
-                      <img src="img/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику">-->
-            <img src="img/logo-blue-mobile.svg" width="42" height="22" alt="Логотип сайта Круизы в Антарктику">
-          </picture>
+          <a href="#">
+            <picture>
+              <!--<source srcset="img/logo-blue-mobile.svg" media="(max-width: 767px)">
+                        <source srcset="img/logo-tablet.svg" media="(max-width: 1023px)">
+                        <img src="img/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику">-->
+              <img src="img/logo-blue-mobile.svg" width="42" height="22" alt="Логотип сайта Круизы в Антарктику">
+            </picture>
+          </a>
         </div>
         <nav class="page-header__site-nav site-nav">
           <ul class="site-nav__list">
@@ -607,7 +599,7 @@
                 <img src="img/minion-desktop@1x.jpg" srcset="img/minion-desktop@2x.jpg 2x" alt="Круиз Элайн" width="260"
                   height="386">-->
                 <!-- 1х: 309px; 2x: 618px-->
-                <img src="img/minion-tablet@1x.jpg" srcset="img/minion-tablet@2x.jpg 2x" alt="Круиз Элайн" width="309"
+                <img src="img/minion-tablet@1x.jpg" srcset="img/minion-tablet@2x.jpg 2x" alt="Круиз Минион - 1" width="309"
                   height="386">
               </picture>
               <!--<source srcset="img/minion-tablet@1x.jpg 1x, img/minion-tablet@2x.jpg 2x" media="(max-width: 767px)">
@@ -669,21 +661,21 @@
             <p>
               Оставьте заявку и мы свяжемся с вами в ближайшее время
             </p>
-            <div>
+            <div tabindex="0">
               <label for="name">
                 <input id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
             </div>
-            <div>
+            <div tabindex="0">
               <label for="phone">
                 <input id="phone" type="tel" name="user-phonenumber" value="" required="" placeholder="89236889975"
                   pattern="[0-9]{11}"></label>
             </div>
-            <div>
+            <div tabindex="0">
               <label for="email">
                 <input id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com"
                   required=""></label>
             </div>
-            <div>
+            <div tabindex="0">
               <input type="checkbox" id="personal-data" name="personal-data" class="visually-hidden" checked="">
               <label for="personal-data">Я согласен на обработку моих персональных данных</label>
             </div>
@@ -724,7 +716,7 @@
               <svg width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-              8-800-200-00-00
+              <a href="tel:+88002000000">8-800-200-00-00</a>
             </p>
           </div>
         </div>
@@ -733,11 +725,13 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo logo logo--white">
-        <picture>
-          <source srcset="img/logo-white-mobile.svg" media="(max-width: 767px)">
-          <source srcset="img/logo-tablet.svg" media="(max-width: 1023px)">
-          <img src="img/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику">
-        </picture>
+        <a href="#">
+          <picture>
+            <source srcset="img/logo-white-mobile.svg" media="(max-width: 767px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1023px)">
+            <img src="img/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику">
+          </picture>
+        </a>
       </div>
       <ul class="page-footer__nav">
         <li>
@@ -787,11 +781,8 @@
     </footer>
   </div>
 
-
   <script src="js/main.js"></script>
-  <!--
-    <script src="js/vendor.js" defer></script>
-    -->
+  <script src="js/vendor.js" defer></script>
 
 </body>
 

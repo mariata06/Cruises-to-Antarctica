@@ -97,6 +97,10 @@
     align-self: flex-end;
     padding-top: 14px;
     padding-bottom: 14px;
+
+    a:hover {
+      opacity: 0.5;
+    }
   }
 
   p {

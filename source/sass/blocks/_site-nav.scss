@@ -61,5 +61,10 @@
       line-height: 22px;
       color: $dark-blue;
     }
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.7s ease-out;
+    }
   }
 }
