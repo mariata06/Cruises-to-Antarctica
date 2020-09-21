@@ -29,6 +29,11 @@
       font-size: 12px;
       line-height: 15px;
     }
+
+    &:hover {
+      opacity: 0.5;
+      transition: 0.7s ease-out;
+    }
   }
 }
 
