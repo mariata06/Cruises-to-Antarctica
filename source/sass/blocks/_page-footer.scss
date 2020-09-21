@@ -30,9 +30,20 @@
       line-height: 15px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.5;
       transition: 0.7s ease-out;
+    }
+
+    &:active {
+      color: $sky;
+    }
+
+    svg {
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 }
