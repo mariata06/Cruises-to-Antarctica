@@ -1,5 +1,8 @@
 .page-wrapper {
   margin: 0 auto;
+  //max-width: 1366px;
+  //padding-left: 103px;
+  //padding-right: 103px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     margin: 0 auto;

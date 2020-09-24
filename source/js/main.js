@@ -1,6 +1,6 @@
 /*****************************МОБИЛЬНОЕ МЕНЮ**********************************/
 
-'use strict';
+"use strict";
 
 (function () {
   var buttonBurger = document.querySelector(".page-header__mobile-menu-burger");

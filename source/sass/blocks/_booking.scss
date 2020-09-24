@@ -1,26 +1,17 @@
 .booking {
-  padding: 50px 163px;
+  //padding: 50px 163px;
   background-color: $blue;
   background-image: url("../img/booking-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/booking-desktop@2x.jpg");
   }
 
-  /* для резины
-  @media (min-width: 1024px) and (max-width: 1700px) {
-    padding: 30px 45px 30px 45px;
-  }
-  */
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
     background-image: url("../img/booking-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -29,9 +20,6 @@
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 65px 15px;
-    display: flex;
-    flex-wrap: wrap;
     background-image: url("../img/booking-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -74,6 +62,31 @@
   }
 }
 
+.booking__content {
+  //padding: 50px 163px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 678px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding: 65px 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .booking__text {
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     margin: 0 auto;
@@ -97,100 +110,5 @@
       padding-left: 17px;
       padding-right: 17px;
     }
-  }
-}
-
-form {
-  padding: 50px;
-  width: 403px;
-  background-color: $dark-blue;
-
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    margin: 0 auto;
-  }
-
-  @media (max-width: $max-mobile-width) {
-    margin: 0 auto;
-    padding: 40px 30px;
-  }
-
-  p {
-    color: $white;
-    margin: 0;
-    margin-bottom: 35px;
-  }
-
-  input {
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
-    margin-bottom: 20px;
-    border: none;
-
-    &::placeholder {
-      color: $dark-blue;
-      font-size: 14px;
-      line-height: 21px;
-      font-weight: 400;
-    }
-  }
-
-  label {
-    color: $light;
-    font-size: 10px;
-    line-height: 13px;
-    font-weight: 400;
-
-    @media (max-width: $max-mobile-width) {
-      line-height: 12px;
-    }
-  }
-
-  input[type="checkbox"] + label {
-    position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 10;
-      top: -3px;
-      left: 0;
-      width: 18px;
-      height: 18px;
-      background-color: $white;
-
-      @media (max-width: $max-mobile-width) {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
-  input[type="checkbox"]:checked + label {
-    position: relative;
-    padding-left: 20px;
-
-    &::before {
-      content: url("../img/icon-tick.svg");
-      position: absolute;
-      z-index: 11;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  button {
-    color: $dark-blue;
-    background-color: $white;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 600;
   }
 }

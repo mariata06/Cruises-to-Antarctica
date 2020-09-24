@@ -1,11 +1,25 @@
 .travels {
-  padding: 120px 103px;
+  //padding: 120px 103px;
+  //max-width: 1160px;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    //padding: 100px 45px;
+  }
+}
+
+.travels__content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1160px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    padding: 100px 45px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 678px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -15,7 +29,7 @@
 }
 
 .travels__text {
-  width: 560px;
+  width: 530px;
 
   @media (min-width: 1024px) and (max-width: 1300px) {
     padding-right: 50px;
@@ -49,6 +63,8 @@
 .travels__img {
   @media (max-width: $max-mobile-width) {
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
   }
 
   img {
@@ -58,8 +74,10 @@
     }
 
     @media (max-width: $max-mobile-width) {
-      width: 290px;
-      height: 186px;
+      //width: 290px;
+      //height: 186px;
+      width: 100%;
+      height: 100%;
     }
   }
 }

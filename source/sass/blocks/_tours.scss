@@ -1,11 +1,19 @@
-.tours {
-  padding: 120px 118px;
+.tours__content {
+  //padding: 120px 118px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  //justify-content: space-between;
+  max-width: 1160px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    padding: 100px 60px;
+    //padding: 100px 60px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 678px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -35,6 +43,28 @@
   margin-bottom: 30px;
   height: 386px;
   background-color: $light-blue;
+  margin-right: 30px;
+
+  &:nth-child(4n+1) {
+    margin-right: 0;
+
+    @media (max-width: $max-mobile-width) {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    margin-right: 0;
+  }
+
+  /*
+  &:nth-child(2n+1) {
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      margin-right: 0;
+    }
+  }
+  */
 
   &:hover {
     .tours__description {
@@ -54,7 +84,7 @@
   }
 }
 
-.tours__content {
+.tours__wrapper {
   position: relative;
   color: $white;
   width: 100%;
@@ -67,10 +97,12 @@
 
   h3 {
     position: absolute;
-    bottom: 30px;
+    //top: 20px;
+    bottom: 5px;
     left: 25px;
     margin: 0;
     //z-index: 10;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
@@ -78,7 +110,7 @@
 }
 
 .tours__description {
-  padding: 55px 25px 35px;
+  padding: 35px 25px;
   position: absolute;
   top: 0;
   left: 0;
@@ -123,7 +155,7 @@
     }
 
     &:nth-child(even) {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
   }
 }
