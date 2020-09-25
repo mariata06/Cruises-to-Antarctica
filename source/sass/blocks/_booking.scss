@@ -50,7 +50,7 @@
   p {
     font-size: 18px;
     line-height: 27px;
-    font-weight: 500;
+    font-weight: 400;
 
     @media (max-width: $max-mobile-width) {
       font-size: 16px;
@@ -67,9 +67,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
-  max-width: 1160px;
+  max-width: 1040px;
   margin: 0 auto;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
@@ -88,6 +88,8 @@
 }
 
 .booking__text {
+  margin-top: 162px;
+
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     margin: 0 auto;
     text-align: center;
@@ -97,8 +99,13 @@
     width: 100%;
   }
 
+  h2 {
+    margin-bottom: 8px;
+  }
+
   p {
     width: 352px;
+    margin: 0;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       margin: 0 auto;

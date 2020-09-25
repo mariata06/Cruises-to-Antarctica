@@ -1,12 +1,12 @@
 .tours__content {
   //padding: 120px 118px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 90px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   //justify-content: space-between;
-  max-width: 1160px;
+  max-width: 1130px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     //padding: 100px 60px;
@@ -26,6 +26,8 @@
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
+    margin: 0;
+    margin-bottom: 50px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       font-size: 26px;
@@ -73,8 +75,9 @@
     }
 
     h3 {
-      top: 20px;
+      top: 28px;
       z-index: 11;
+      left: 25px;
     }
   }
 
@@ -99,7 +102,7 @@
     position: absolute;
     //top: 20px;
     bottom: 5px;
-    left: 25px;
+    left: 30px;
     margin: 0;
     //z-index: 10;
     margin-bottom: 20px;
@@ -110,7 +113,7 @@
 }
 
 .tours__description {
-  padding: 35px 25px;
+  padding: 68px 25px 36px;
   position: absolute;
   top: 0;
   left: 0;
@@ -122,6 +125,10 @@
   flex-wrap: wrap;
   z-index: 10;
 
+  ul {
+    margin: 0;
+  }
+
   a {
     color: $dark-blue;
     background-color: $white;
@@ -129,9 +136,12 @@
     display: block;
     text-align: center;
     align-self: flex-end;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 9px;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
 
     &:hover,
     &:focus {
@@ -152,6 +162,7 @@
 
     &:nth-child(odd) {
       font-weight: 500;
+      margin-bottom: 2px;
     }
 
     &:nth-child(even) {

@@ -1,5 +1,7 @@
 .form {
   padding: 50px;
+  padding-top: 44px;
+  padding-bottom: 50px;
   max-width: 403px;
   background-color: $dark-blue;
 
@@ -15,13 +17,15 @@
   p {
     color: $white;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
+    font-weight: 500;
   }
 
   input {
+    font-family: "Montserrat", "Arial", sans-serif;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 11px;
     padding-left: 16px;
     margin-bottom: 20px;
     border: none;
@@ -43,6 +47,7 @@
     font-size: 10px;
     line-height: 13px;
     font-weight: 400;
+    padding-top: 3px;
 
     @media (max-width: $max-mobile-width) {
       line-height: 12px;
@@ -59,7 +64,7 @@
       display: block;
       position: absolute;
       z-index: 10;
-      top: -3px;
+      top: 0;
       left: 0;
       width: 18px;
       height: 18px;
@@ -86,7 +91,7 @@
       content: url("../img/icon-tick.svg");
       position: absolute;
       z-index: 11;
-      top: 0;
+      top: 2px;
       left: 3px;
 
       @media (max-width: $max-mobile-width) {
@@ -105,9 +110,9 @@
     background-color: $white;
     display: block;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 32px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 600;

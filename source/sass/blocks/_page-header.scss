@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 650px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
@@ -60,7 +61,7 @@
 }
 
 .page-header__menu {
-  padding-top: 35px;
+  padding-top: 24px;
   padding-bottom: 35px;
   //padding-left: 7.5%;
   //padding-right: 7.5%;
@@ -68,7 +69,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 210px;
+  margin-bottom: 148px;
   max-width: 1160px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
@@ -150,6 +151,7 @@
   }
 
   p {
+    margin-top: 12px;
     font-size: 20px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {

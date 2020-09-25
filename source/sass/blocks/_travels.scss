@@ -40,6 +40,7 @@
     line-height: 42px;
     font-weight: 600;
     margin: 0;
+    margin-top: 16px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       padding-right: 115px;
@@ -54,6 +55,8 @@
   }
 
   p {
+    margin-top: 22px;
+
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       padding-right: 15px;
     }
@@ -61,6 +64,8 @@
 }
 
 .travels__img {
+  height: 301px;
+
   @media (max-width: $max-mobile-width) {
     margin: 0 auto;
     width: 100%;
