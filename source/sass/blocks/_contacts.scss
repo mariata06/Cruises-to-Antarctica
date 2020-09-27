@@ -22,6 +22,7 @@
   position: relative;
   height: 306px;
   display: block;
+  width: 560px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 50%;
@@ -32,6 +33,8 @@
   }
 
   img {
+    width: 100%;
+
     @media (max-width: $max-mobile-width) {
       width: 100%;
       height: 100%;
@@ -57,7 +60,7 @@
 
 .contacts__text {
   padding-left: 100px;
-  width: 50%;
+  width: 51%;
   margin-top: 75px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
@@ -83,14 +86,14 @@
 }
 
 .contacts__info {
-  margin-top: 45px;
+  margin-top: 32px;
 
   p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    margin-bottom: 33px;
-    padding-left: 20px;
+    margin-bottom: 22px;
+    padding-left: 28px;
     position: relative;
   }
 
@@ -98,7 +101,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -5px;
+    left: 0;
   }
 
   a {

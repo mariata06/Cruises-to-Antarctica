@@ -9,8 +9,9 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 63px;
     max-width: 678px;
+    align-items: unset;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -26,6 +27,10 @@
     padding-right: 50px;
   }
 
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    width: 354px;
+  }
+
   h2 {
     font-size: 28px;
     line-height: 42px;
@@ -37,6 +42,7 @@
       padding-right: 115px;
       font-size: 26px;
       line-height: 36px;
+      margin-top: -8px;
     }
 
     @media (max-width: $max-mobile-width) {
@@ -49,13 +55,18 @@
     margin-top: 22px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      padding-right: 15px;
+      padding-right: 29px;
+      margin-top: 16px;
     }
   }
 }
 
 .travels__img {
   height: 301px;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    width: 324px;
+  }
 
   @media (max-width: $max-mobile-width) {
     margin: 0 auto;

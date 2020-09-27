@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    min-height: 638px;
     background-image: url("../img/intro-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -52,6 +53,7 @@
     max-width: 678px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 200px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -73,6 +75,8 @@
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 100%;
     padding: 0;
+    padding-top: 10px;
+    margin-bottom: 195px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -137,6 +141,11 @@
     line-height: 66px;
     font-weight: 700;
     margin: 0;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      font-size: 50px;
+      line-height: 61px;
+    }
 
     @media (max-width: $max-mobile-width) {
       font-size: 36px;
