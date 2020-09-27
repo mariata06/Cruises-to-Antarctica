@@ -12,21 +12,22 @@
 
   mobileMenu.classList.add("site-nav--hide"); // спрятанная навигация при работающем js
   headerMenu.classList.remove("page-header__menu--nojs"); // меню на синем фоне при работающем js
-  buttonBurger.classList.remove("page-header__mobile-menu-burger--nojs");
+  if (buttonBurger !== null) {
+    buttonBurger.classList.remove("page-header__mobile-menu-burger--nojs");
+    buttonBurger.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mobileMenu.classList.toggle("site-nav--hide");
+      mobileMenu.classList.add("site-nav--show");
+      buttonBurger.classList.add("page-header__mobile-menu-burger--hide");
+      closeButton.classList.add("page-header__mobile-menu-close--show");
+      headerMenu.classList.add("page-header__menu--show");
+      whiteLogo.classList.add("logo--white--hide");
+      blueLogo.classList.add("logo--blue--show");
+    });
+  }
   closeButton.classList.remove("page-header__mobile-menu-close--nojs");
   whiteLogo.classList.remove("logo--white--nojs");
   blueLogo.classList.remove("logo--blue--nojs");
-
-  buttonBurger.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mobileMenu.classList.toggle("site-nav--hide");
-    mobileMenu.classList.add("site-nav--show");
-    buttonBurger.classList.add("page-header__mobile-menu-burger--hide");
-    closeButton.classList.add("page-header__mobile-menu-close--show");
-    headerMenu.classList.add("page-header__menu--show");
-    whiteLogo.classList.add("logo--white--hide");
-    blueLogo.classList.add("logo--blue--show");
-  });
 
   closeButton.addEventListener("click", function (evt) {
     evt.preventDefault();

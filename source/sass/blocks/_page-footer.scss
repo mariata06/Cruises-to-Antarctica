@@ -1,17 +1,6 @@
 .page-footer {
-  //padding: 50px 103px;
   margin: 0 auto;
   background-color: $dark-blue;
-
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    //padding: 50px 45px;
-  }
-
-  @media (max-width: $max-mobile-width) {
-    //padding: 40px 15px;
-    //flex-wrap: wrap;
-    //align-items: center;
-  }
 
   a {
     color: $white;
@@ -32,11 +21,13 @@
     &:active {
       color: $sky;
     }
+  }
+}
 
+.page-footer__social-link {
+  &:active {
     svg {
-      &:active {
-        opacity: 0.5;
-      }
+      opacity: 0.5;
     }
   }
 }

@@ -1,5 +1,4 @@
 .booking {
-  //padding: 50px 163px;
   background-color: $blue;
   background-image: url("../img/booking-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -63,11 +62,9 @@
 }
 
 .booking__content {
-  //padding: 50px 163px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
-  //align-items: center;
   justify-content: space-between;
   max-width: 1040px;
   margin: 0 auto;

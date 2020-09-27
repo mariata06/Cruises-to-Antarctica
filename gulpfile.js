@@ -88,35 +88,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("source"));
 });
 
-/*
-с минификацией html
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
-    .pipe(gulp.dest("build"));
-});
-*/
-
-/*
-gulp.task("min-js", function (done) {
-  pump([
-      gulp.src("source/js/*.js"),
-      uglify(),
-      rename(function (path) {
-        path.basename += ".min";
-      }),
-      gulp.dest("build/js")
-    ],
-    done
-  );
-});
-*/
-
 // вставить здесь потом task copy
 
 /*

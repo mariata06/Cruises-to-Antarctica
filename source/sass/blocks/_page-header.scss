@@ -63,8 +63,6 @@
 .page-header__menu {
   padding-top: 24px;
   padding-bottom: 35px;
-  //padding-left: 7.5%;
-  //padding-right: 7.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,8 +73,6 @@
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 100%;
     padding: 0;
-    //padding-left: 45px;
-    //padding-right: 45px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -85,7 +81,6 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 143px;
-    //position: absolute;
 
     &--show {
       width: 100%;
@@ -129,7 +124,6 @@
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     padding-left: 0;
     max-width: 678px;
-    //margin-right: auto;
     margin: 0;
   }
 
@@ -167,6 +161,10 @@
 }
 
 .page-header__mobile-menu-burger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
   @media (max-width: $max-mobile-width) {
     display: block;
 
@@ -185,6 +183,10 @@
 }
 
 .page-header__mobile-menu-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
   @media (max-width: $max-mobile-width) {
     display: none;
 

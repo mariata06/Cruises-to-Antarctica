@@ -1,6 +1,5 @@
 .site-nav {
   @media (max-width: $max-mobile-width) {
-    //display: none;
     display: block;
     width: 100%;
     order: 3;
@@ -28,7 +27,6 @@
     }
 
     @media (max-width: $max-mobile-width) {
-      //display: none;
       display: block;
     }
 
