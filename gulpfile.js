@@ -28,7 +28,6 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    //.pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -40,7 +39,6 @@ gulp.task("copy_css", function () {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    //.pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -73,7 +71,6 @@ gulp.task("sprite", function () {
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
-    //.pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
@@ -82,10 +79,8 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"));
-    //.pipe(gulp.dest("source"));
 });
 
-// вставить здесь потом task copy
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
@@ -105,8 +100,6 @@ gulp.task("clean", function () {
 
 gulp.task("server", function () {
   server.init({
-    //server: "source/"  /*сначала source, потом будет build*/
-    //server: "source/",
     server: "build/",
     notify: false,
     open: true,
@@ -115,29 +108,16 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload); /*добавила эту строку*/
-  //gulp.watch("source/js/**/*.js", gulp.series("min-js"));
-  //gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
-  //gulp.watch("source/js/*.js").on("change", server.reload);
-
-  //потом добавить эти строки на этапе основной сборки
+  gulp.watch("source/*.html").on("change", server.reload);
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 
 });
-
-/*потом добавить эти строки на этап сборки*/
-
 
 gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
 
-
-/*до основной сборки*/
-//gulp.task("build", gulp.series("css", "sprite", "html"));
-//gulp.task("start", gulp.series("css", "server"));
-/*потом добавить эти строки на этап сборки*/
 gulp.task("build", gulp.series("clean", "copy", "css", "html", "sprite", "copy_css"));
 gulp.task("start", gulp.series("build", "server"));
