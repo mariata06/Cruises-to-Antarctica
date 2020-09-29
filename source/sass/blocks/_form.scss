@@ -37,7 +37,8 @@
       font-weight: 400;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $light-grey;
     }
   }
@@ -58,6 +59,7 @@
     position: relative;
     padding-left: 24px;
     display: block;
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -118,5 +120,21 @@
     font-weight: 600;
     border: none;
     outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      background-color: $sky;
+      color: $white;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 }

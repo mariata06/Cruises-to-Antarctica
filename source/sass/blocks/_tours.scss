@@ -8,9 +8,9 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-width: 678px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    max-width: 648px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -29,6 +29,7 @@
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       font-size: 26px;
       line-height: 39px;
+      margin-bottom: 48px;
     }
 
     @media (max-width: $max-mobile-width) {

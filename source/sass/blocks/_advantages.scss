@@ -47,7 +47,7 @@
 
 .advantages__content {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     padding-top: 90px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     max-width: 678px;
   }
 
@@ -71,6 +71,7 @@
   width: 360px;
   padding: 30px;
   padding-bottom: 24px;
+  margin-bottom: 40px;
 
   @media (min-width: 1024px) and (max-width: 1300px) {
     width: 400px;
@@ -83,7 +84,7 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 206px;
-    padding: 25px 20px;
+    padding: 25px 19px 20px 20px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -111,7 +112,15 @@
   height: 32px;
   display: flex;
 
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    height: 26px;
+  }
+
   svg {
     align-self: center;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      transform: scale(0.9);
+    }
   }
 }

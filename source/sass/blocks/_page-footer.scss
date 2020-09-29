@@ -1,27 +1,6 @@
 .page-footer {
   margin: 0 auto;
   background-color: $dark-blue;
-
-  a {
-    color: $white;
-    line-height: 20px;
-    font-weight: 500;
-
-    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 12px;
-      line-height: 15px;
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 0.5;
-      transition: 0.7s ease-out;
-    }
-
-    &:active {
-      color: $sky;
-    }
-  }
 }
 
 .page-footer__social-link {
@@ -42,6 +21,8 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     max-width: 678px;
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -79,6 +60,7 @@
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       margin-left: 23px;
+      align-items: center;
     }
 
     @media (max-width: $max-mobile-width) {
@@ -97,6 +79,11 @@
 
 .page-footer__logo {
   height: 38px;
+
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 
   @media (max-width: $max-mobile-width) {
     margin-bottom: 30px;
@@ -125,6 +112,7 @@
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 441px;
+    margin-left: 25px;
   }
 
   @media (min-width: 319px) and (max-width: $max-mobile-width) {
@@ -141,6 +129,27 @@
   li {
     @media (max-width: $max-mobile-width) {
       margin-bottom: 23px;
+    }
+  }
+
+  a {
+    color: $white;
+    line-height: 20px;
+    font-weight: 500;
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+      transition: 0.7s ease-out;
+    }
+
+    &:active {
+      color: $sky;
     }
   }
 }
