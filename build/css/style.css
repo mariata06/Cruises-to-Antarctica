@@ -847,7 +847,7 @@ a {
       color: #011c40;
       line-height: 21px;
       font-weight: 400; }
-    .form input:hover {
+    .form input:hover, .form input:focus {
       background-color: #f2f2f2; }
   .form label {
     color: #f9fbfd;
@@ -918,8 +918,8 @@ a {
       background-color: #5496bd;
       color: #ffffff; }
     .form button:disabled {
-      cursor: not-allowed;
-      background-color: yellow; }
+      opacity: 0.6;
+      cursor: not-allowed; }
 
 .contacts__content {
   padding-top: 120px;

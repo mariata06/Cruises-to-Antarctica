@@ -130,3 +130,21 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "html", "sprite", "copy_css"));
 gulp.task("start", gulp.series("build", "server"));
+
+var imagemin = require("imagemin"); // The imagemin module.
+var webp = require("imagemin-webp"); // imagemin's WebP plugin.
+var outputFolder = "./img"; // Output folder
+var PNGImages = "./img/*.png"; // PNG images
+var JPEGImages = "./img/*.jpg"; // JPEG images
+
+imagemin([PNGImages], outputFolder, {
+  plugins: [webp({
+    lossless: true // Losslessly encode images
+  })]
+});
+
+imagemin([JPEGImages], outputFolder, {
+  plugins: [webp({
+    quality: 65 // Quality setting from 0 to 100
+  })]
+});
