@@ -612,7 +612,8 @@ a {
   .tours__item:hover h3 {
     top: 28px;
     z-index: 11;
-    left: 25px; }
+    left: 25px;
+    bottom: auto; }
   @media (max-width: 767px) {
     .tours__item {
       margin: 0 auto;

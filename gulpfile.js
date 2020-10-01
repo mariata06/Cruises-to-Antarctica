@@ -131,6 +131,7 @@ gulp.task("refresh", function (done) {
 gulp.task("build", gulp.series("clean", "copy", "css", "html", "sprite", "copy_css"));
 gulp.task("start", gulp.series("build", "server"));
 
+/*
 var imagemin = require("imagemin"); // The imagemin module.
 var webp = require("imagemin-webp"); // imagemin's WebP plugin.
 var outputFolder = "./img"; // Output folder
@@ -148,3 +149,4 @@ imagemin([JPEGImages], outputFolder, {
     quality: 65 // Quality setting from 0 to 100
   })]
 });
+*/
