@@ -16,7 +16,7 @@
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
-    padding: 65px 15px;
+    padding: 40px 15px 57px;
   }
 }
 
@@ -57,6 +57,11 @@
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       padding-right: 29px;
       margin-top: 16px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-top: 16px;
+      margin-bottom: 34px;
     }
   }
 }

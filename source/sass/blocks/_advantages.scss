@@ -41,6 +41,7 @@
     @media (max-width: $max-mobile-width) {
       font-size: 24px;
       line-height: 36px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -66,7 +67,7 @@
 
   @media (max-width: $max-mobile-width) {
     flex-wrap: wrap;
-    padding: 65px 15px;
+    padding: 57px 15px 65px;
   }
 }
 
@@ -94,6 +95,11 @@
   @media (max-width: $max-mobile-width) {
     width: 290px;
     margin: 0 auto 30px;
+    padding: 23px 20px 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   h3 {
@@ -102,6 +108,11 @@
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
+
+    @media (max-width: $max-mobile-width) {
+      margin-top: 18px;
+      margin-bottom: 7px;
+    }
   }
 
   p {
@@ -109,6 +120,12 @@
     line-height: 20px;
     font-weight: 400;
     margin: 0;
+  }
+
+  .advantages__item-title {
+    @media (max-width: $max-mobile-width) {
+      padding-right: 40px;
+    }
   }
 }
 
@@ -125,6 +142,10 @@
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       transform: scale(0.9);
+    }
+
+    @media (max-width: $max-mobile-width) {
+      transform: scale(0.8);
     }
   }
 }

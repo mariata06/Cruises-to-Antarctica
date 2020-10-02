@@ -92,7 +92,8 @@ a {
       background-image: url("../img/intro-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .page-header {
-      background-image: url("../img/intro-mobile@1x.jpg"); } }
+      background-image: url("../img/intro-mobile@1x.jpg");
+      min-height: 500px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/intro-mobile@2x.jpg"); } }
@@ -126,7 +127,8 @@ a {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+      padding-bottom: 150px; } }
 
 .page-header__menu {
   padding-top: 24px;
@@ -155,7 +157,8 @@ a {
       padding-top: 20px;
       padding-left: 15px;
       padding-right: 15px;
-      margin-bottom: 143px; }
+      margin-bottom: 113px;
+      padding-bottom: 0; }
       .page-header__menu--show {
         width: 100%;
         background-color: #ffffff;
@@ -182,8 +185,8 @@ a {
   @media (max-width: 767px) {
     .page-header__mobile-menu {
       width: 50%;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2;
@@ -210,7 +213,7 @@ a {
   @media (max-width: 767px) {
     .page-header__intro {
       padding-left: 15px;
-      padding-top: 20px; } }
+      padding-top: 15px; } }
   .page-header__intro h1 {
     font-size: 54px;
     line-height: 66px;
@@ -242,13 +245,18 @@ a {
   outline: none; }
   @media (max-width: 767px) {
     .page-header__mobile-menu-burger {
-      display: block; }
+      display: block;
+      padding: 0;
+      padding-top: 5px; }
       .page-header__mobile-menu-burger--nojs {
         display: none; }
       .page-header__mobile-menu-burger--show {
         display: block; }
       .page-header__mobile-menu-burger--hide {
-        display: none; } }
+        display: none; }
+      .page-header__mobile-menu-burger svg {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); } }
 
 .page-header__mobile-menu-close {
   background-color: transparent;
@@ -391,7 +399,7 @@ a {
     .travels__content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      padding: 65px 15px; } }
+      padding: 40px 15px 57px; } }
 
 .travels__text {
   width: 530px; }
@@ -423,6 +431,10 @@ a {
       .travels__text p {
         padding-right: 29px;
         margin-top: 16px; } }
+    @media (max-width: 767px) {
+      .travels__text p {
+        margin-top: 16px;
+        margin-bottom: 34px; } }
 
 .travels__img {
   height: 301px; }
@@ -478,7 +490,8 @@ a {
     @media (max-width: 767px) {
       .advantages h2 {
         font-size: 24px;
-        line-height: 36px; } }
+        line-height: 36px;
+        margin-bottom: 30px; } }
 
 .advantages__content {
   padding-top: 110px;
@@ -493,6 +506,10 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1160px; }
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    .advantages__content {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .advantages__content {
       padding-top: 90px;
@@ -502,7 +519,7 @@ a {
     .advantages__content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      padding: 65px 15px; } }
+      padding: 57px 15px 65px; } }
 
 .advantages__item {
   background-color: #ffffff;
@@ -523,18 +540,28 @@ a {
   @media (max-width: 767px) {
     .advantages__item {
       width: 290px;
-      margin: 0 auto 30px; } }
+      margin: 0 auto 30px;
+      padding: 23px 20px 19px; }
+      .advantages__item:last-child {
+        margin-bottom: 0; } }
   .advantages__item h3 {
     font-size: 18px;
     line-height: 25px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      .advantages__item h3 {
+        margin-top: 18px;
+        margin-bottom: 7px; } }
   .advantages__item p {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     margin: 0; }
+  @media (max-width: 767px) {
+    .advantages__item .advantages__item-title {
+      padding-right: 40px; } }
 
 .advantages__icon {
   height: 32px;
@@ -551,6 +578,10 @@ a {
       .advantages__icon svg {
         -webkit-transform: scale(0.9);
                 transform: scale(0.9); } }
+    @media (max-width: 767px) {
+      .advantages__icon svg {
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8); } }
 
 .tours__content {
   padding-top: 110px;
@@ -561,7 +592,15 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1130px; }
+  max-width: 1130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    .tours__content {
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .tours__content {
       -webkit-box-pack: justify;
@@ -572,7 +611,18 @@ a {
       max-width: 648px; } }
   @media (max-width: 767px) {
     .tours__content {
-      padding: 65px 25px; } }
+      padding: 58px 25px 65px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (min-width: 590px) and (max-width: 650px) {
+    .tours__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .tours__content h2 {
     text-align: center;
     width: 100%;
@@ -589,21 +639,40 @@ a {
     @media (max-width: 767px) {
       .tours__content h2 {
         font-size: 24px;
-        line-height: 36px; } }
+        line-height: 36px;
+        margin-bottom: 30px; } }
 
 .tours__item {
   margin-bottom: 30px;
   height: 386px;
   background-color: #87cefa;
-  margin-right: 30px; }
-  .tours__item:nth-child(4n+1) {
-    margin-right: 0; }
-    @media (max-width: 767px) {
-      .tours__item:nth-child(4n+1) {
-        margin: 0 auto;
-        margin-bottom: 30px; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  /*
+  @media (min-width: 590px) and (max-width: 650px) {
+    margin-right: 50px;
+  }
+  */
+  /*
+  &:nth-child(4n+1) {
+    //margin-right: 0;
+  }
+  */
+  /*
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    margin-right: auto;
+  }
+  */ }
+  @media (min-width: 1024px) and (max-width: 1100px) {
     .tours__item {
+      margin-right: 50px; } }
+  @media (max-width: 767px) {
+    .tours__item {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+      .tours__item:last-child {
+        margin-bottom: 0; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tours__item:last-child {
+      margin-left: auto;
       margin-right: 0; } }
   .tours__item:hover .tours__description {
     opacity: 1;
@@ -614,10 +683,6 @@ a {
     z-index: 11;
     left: 25px;
     bottom: auto; }
-  @media (max-width: 767px) {
-    .tours__item {
-      margin: 0 auto;
-      margin-bottom: 30px; } }
 
 .tours__wrapper {
   position: relative;
@@ -736,7 +801,8 @@ a {
         font-size: 24px;
         line-height: 31px;
         text-align: center;
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 14px; } }
   .booking p {
     font-size: 18px;
     line-height: 27px;
@@ -772,7 +838,7 @@ a {
       max-width: 678px; } }
   @media (max-width: 767px) {
     .booking__content {
-      padding: 65px 15px;
+      padding: 60px 15px 65px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -787,7 +853,8 @@ a {
       text-align: center; } }
   @media (max-width: 767px) {
     .booking__text {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 0; } }
   .booking__text p {
     width: 352px;
     margin: 0; }
@@ -798,8 +865,9 @@ a {
     @media (max-width: 767px) {
       .booking__text p {
         width: 100%;
-        padding-left: 17px;
-        padding-right: 17px; } }
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 35px; } }
 
 .form {
   padding: 50px;
@@ -813,11 +881,13 @@ a {
   @media (max-width: 767px) {
     .form {
       margin: 0 auto;
-      padding: 40px 30px; } }
+      padding: 35px 30px 40px; } }
   .form p {
     color: #ffffff;
     margin: 0;
     margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 25px;
     font-weight: 500; }
   .form input {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -913,6 +983,9 @@ a {
     border: none;
     outline: none;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .form button {
+        margin-top: 24px; } }
     .form button:hover, .form button:focus {
       opacity: 0.5; }
     .form button:active {
@@ -937,7 +1010,7 @@ a {
       max-width: 678px; } }
   @media (max-width: 767px) {
     .contacts__content {
-      padding: 65px 15px;
+      padding: 58px 15px 65px;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-orient: vertical;
@@ -988,7 +1061,8 @@ a {
   @media (max-width: 767px) {
     .contacts__text {
       padding: 0;
-      width: 100%; } }
+      width: 100%;
+      margin-top: 0; } }
   .contacts__text p {
     margin: 0;
     font-size: 18px;
@@ -1011,6 +1085,9 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; } }
+  @media (max-width: 767px) {
+    .contacts__info {
+      margin-top: 27px; } }
   .contacts__info p {
     font-size: 16px;
     line-height: 24px;
@@ -1032,6 +1109,16 @@ a {
       transition: 0.7s ease-out; }
     .contacts__info a:active {
       color: #5496bd; }
+
+@media (max-width: 767px) {
+  .contacts__info-address {
+    margin-bottom: 21px; }
+    .contacts__info-address svg {
+      top: 30%; } }
+
+@media (max-width: 767px) {
+  .contacts__info-tel {
+    margin-bottom: 36px; } }
 
 .page-footer {
   margin: 0 auto;

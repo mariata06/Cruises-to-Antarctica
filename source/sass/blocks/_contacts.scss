@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 65px 15px;
+    padding: 58px 15px 65px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
@@ -30,6 +30,7 @@
   }
 
   @media (max-width: $max-mobile-width) {
+    height: 316px;
     width: 100%;
   }
 
@@ -74,6 +75,7 @@
   @media (max-width: $max-mobile-width) {
     padding: 0;
     width: 100%;
+    margin-top: 0;
   }
 
   p {
@@ -96,6 +98,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 27px;
+    margin-bottom: 36px;
   }
 
   p {
@@ -128,3 +135,21 @@
     }
   }
 }
+
+.contacts__info-address {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 21px;
+
+    svg {
+      top: 30%;
+    }
+  }
+}
+
+/*
+.contacts__info-tel {
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 36px;
+  }
+}
+*/

@@ -45,6 +45,7 @@
       line-height: 31px;
       text-align: center;
       width: 100%;
+      margin-bottom: 14px;
     }
   }
 
@@ -80,7 +81,7 @@
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 65px 15px;
+    padding: 60px 15px 65px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -96,6 +97,7 @@
 
   @media (max-width: $max-mobile-width) {
     width: 100%;
+    margin-top: 0;
   }
 
   p {
@@ -109,8 +111,9 @@
 
     @media (max-width: $max-mobile-width) {
       width: 100%;
-      padding-left: 17px;
-      padding-right: 17px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 35px;
     }
   }
 }

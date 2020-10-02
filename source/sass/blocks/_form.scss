@@ -11,13 +11,15 @@
 
   @media (max-width: $max-mobile-width) {
     margin: 0 auto;
-    padding: 40px 30px;
+    padding: 35px 30px 40px;
   }
 
   p {
     color: $white;
     margin: 0;
     margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 25px;
     font-weight: 500;
   }
 
@@ -121,6 +123,10 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    @media (max-width: $max-mobile-width) {
+      margin-top: 24px;
+    }
 
     &:hover,
     &:focus {
