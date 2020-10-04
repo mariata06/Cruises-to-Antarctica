@@ -142,8 +142,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  margin-bottom: 148px;
+  margin: 0 auto 148px;
   max-width: 1160px; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .page-header__menu {
@@ -154,11 +153,8 @@ a {
   @media (max-width: 767px) {
     .page-header__menu {
       width: 100%;
-      padding-top: 20px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-bottom: 113px;
-      padding-bottom: 0; }
+      padding: 20px 15px 0;
+      margin-bottom: 113px; }
       .page-header__menu--show {
         width: 100%;
         background-color: #ffffff;
@@ -222,22 +218,26 @@ a {
     @media (min-width: 768px) and (max-width: 1023px) {
       .page-header__intro h1 {
         font-size: 50px;
-        line-height: 61px; } }
+        line-height: 61px;
+        font-weight: 700; } }
     @media (max-width: 767px) {
       .page-header__intro h1 {
         font-size: 36px;
-        line-height: 45px; } }
+        line-height: 45px;
+        font-weight: 700; } }
   .page-header__intro p {
     margin-top: 12px;
     font-size: 20px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .page-header__intro p {
         font-size: 18px;
-        line-height: 22px; } }
+        line-height: 22px;
+        font-weight: 400; } }
     @media (max-width: 767px) {
       .page-header__intro p {
         font-size: 16px;
-        line-height: 22px; } }
+        line-height: 22px;
+        font-weight: 400; } }
 
 .page-header__mobile-menu-burger {
   background-color: transparent;
@@ -328,17 +328,20 @@ a {
     margin-right: 0; }
 
 .site-nav a {
-  color: #ffffff;
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: #ffffff; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .site-nav a {
       font-size: 14px;
-      line-height: 17px; } }
+      line-height: 17px;
+      font-weight: 500; } }
   @media (max-width: 767px) {
     .site-nav a {
       font-size: 18px;
       line-height: 22px;
+      font-weight: 500;
       color: #011c40; } }
   .site-nav a:hover, .site-nav a:focus {
     opacity: 0.5;
@@ -417,14 +420,16 @@ a {
     margin-top: 16px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .travels__text h2 {
-        padding-right: 115px;
         font-size: 26px;
         line-height: 36px;
+        font-weight: 600;
+        padding-right: 115px;
         margin-top: -8px; } }
     @media (max-width: 767px) {
       .travels__text h2 {
         font-size: 24px;
-        line-height: 34px; } }
+        line-height: 34px;
+        font-weight: 600; } }
   .travels__text p {
     margin-top: 22px; }
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -486,11 +491,13 @@ a {
     @media (min-width: 768px) and (max-width: 1023px) {
       .advantages h2 {
         font-size: 26px;
-        line-height: 39px; } }
+        line-height: 39px;
+        font-weight: 600; } }
     @media (max-width: 767px) {
       .advantages h2 {
         font-size: 24px;
         line-height: 36px;
+        font-weight: 600;
         margin-bottom: 30px; } }
 
 .advantages__content {
@@ -624,50 +631,36 @@ a {
           -ms-flex-direction: column;
               flex-direction: column; } }
   .tours__content h2 {
-    text-align: center;
-    width: 100%;
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
+    text-align: center;
+    width: 100%;
     margin: 0;
     margin-bottom: 50px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .tours__content h2 {
         font-size: 26px;
         line-height: 39px;
+        font-weight: 600;
         margin-bottom: 48px; } }
     @media (max-width: 767px) {
       .tours__content h2 {
         font-size: 24px;
         line-height: 36px;
+        font-weight: 600;
         margin-bottom: 30px; } }
 
 .tours__item {
   margin-bottom: 30px;
   height: 386px;
-  background-color: #87cefa;
-  /*
-  @media (min-width: 590px) and (max-width: 650px) {
-    margin-right: 50px;
-  }
-  */
-  /*
-  &:nth-child(4n+1) {
-    //margin-right: 0;
-  }
-  */
-  /*
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    margin-right: auto;
-  }
-  */ }
+  background-color: #87cefa; }
   @media (min-width: 1024px) and (max-width: 1100px) {
     .tours__item {
       margin-right: 50px; } }
   @media (max-width: 767px) {
     .tours__item {
-      margin: 0 auto;
-      margin-bottom: 30px; }
+      margin: 0 auto 30px; }
       .tours__item:last-child {
         margin-bottom: 0; } }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -693,14 +686,14 @@ a {
     list-style: none;
     padding: 0; }
   .tours__wrapper h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
     position: absolute;
     bottom: 5px;
     left: 30px;
     margin: 0;
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 500; }
+    margin-bottom: 20px; }
 
 .tours__description {
   padding: 68px 25px 36px;
@@ -720,6 +713,9 @@ a {
   .tours__description ul {
     margin: 0; }
   .tours__description a {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
     color: #011c40;
     background-color: #ffffff;
     width: 100%;
@@ -729,20 +725,17 @@ a {
         align-self: flex-end;
     padding-top: 10px;
     padding-bottom: 9px;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 600; }
+    cursor: pointer; }
     .tours__description a:hover, .tours__description a:focus {
       opacity: 0.5; }
     .tours__description a:active {
       background-color: #5496bd;
       color: #ffffff; }
   .tours__description p {
-    margin: 0;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin: 0; }
     .tours__description p:nth-child(odd) {
       font-weight: 500;
       margin-bottom: 2px; }
@@ -787,12 +780,16 @@ a {
   .booking h2 {
     font-size: 40px;
     line-height: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
     margin: 0;
     margin-bottom: 8px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .booking h2 {
         font-size: 34px;
         line-height: 51px;
+        font-weight: 700;
         text-align: center;
         width: 100%;
         margin-bottom: 6px; } }
@@ -800,6 +797,7 @@ a {
       .booking h2 {
         font-size: 24px;
         line-height: 31px;
+        font-weight: 700;
         text-align: center;
         width: 100%;
         margin-bottom: 14px; } }
@@ -870,9 +868,7 @@ a {
         margin-bottom: 35px; } }
 
 .form {
-  padding: 50px;
-  padding-top: 44px;
-  padding-bottom: 50px;
+  padding: 44px 50px 50px;
   max-width: 403px;
   background-color: #011c40; }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -883,12 +879,12 @@ a {
       margin: 0 auto;
       padding: 35px 30px 40px; } }
   .form p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
     color: #ffffff;
     margin: 0;
-    margin-bottom: 26px;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 500; }
+    margin-bottom: 26px; }
   .form input {
     font-family: "Montserrat", "Arial", sans-serif;
     width: 100%;
@@ -921,10 +917,10 @@ a {
     .form input:hover, .form input:focus {
       background-color: #f2f2f2; }
   .form label {
-    color: #f9fbfd;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 13px;
     font-weight: 400;
+    color: #f9fbfd;
     padding-top: 3px; }
     @media (max-width: 767px) {
       .form label {
@@ -970,6 +966,9 @@ a {
       .form input[type="checkbox"]:checked + label {
         padding-left: 24px; } }
   .form button {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
     color: #011c40;
     background-color: #ffffff;
     display: block;
@@ -977,9 +976,6 @@ a {
     margin-top: 32px;
     padding-top: 11px;
     padding-bottom: 11px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 600;
     border: none;
     outline: none;
     cursor: pointer; }
@@ -1029,6 +1025,7 @@ a {
       height: 335px; } }
   @media (max-width: 767px) {
     .contacts__map {
+      height: 316px;
       width: 100%; } }
   .contacts__map img {
     width: 100%;
@@ -1064,10 +1061,10 @@ a {
       width: 100%;
       margin-top: 0; } }
   .contacts__text p {
-    margin: 0;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 500; }
+    font-weight: 500;
+    margin: 0; }
     @media (max-width: 767px) {
       .contacts__text p {
         width: 100%; } }
@@ -1087,7 +1084,8 @@ a {
               align-items: flex-start; } }
   @media (max-width: 767px) {
     .contacts__info {
-      margin-top: 27px; } }
+      margin-top: 27px;
+      margin-bottom: 36px; } }
   .contacts__info p {
     font-size: 16px;
     line-height: 24px;
@@ -1115,10 +1113,6 @@ a {
     margin-bottom: 21px; }
     .contacts__info-address svg {
       top: 30%; } }
-
-@media (max-width: 767px) {
-  .contacts__info-tel {
-    margin-bottom: 36px; } }
 
 .page-footer {
   margin: 0 auto;
@@ -1178,7 +1172,10 @@ a {
       max-width: 130px; } }
   @media (max-width: 767px) {
     .page-footer__social-list {
-      margin-left: 0; } }
+      margin-left: 0; }
+      .page-footer__social-list svg {
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8); } }
   .page-footer__social-list li {
     margin-left: 33px;
     display: -webkit-box;
@@ -1195,7 +1192,7 @@ a {
     @media (max-width: 767px) {
       .page-footer__social-list li {
         margin-left: 0;
-        margin-right: 23px; } }
+        margin-right: 20px; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .page-footer__social-list svg {
       -webkit-transform: scale(0.8);
@@ -1213,7 +1210,7 @@ a {
               align-items: center; } }
   @media (max-width: 767px) {
     .page-footer__logo {
-      margin-bottom: 30px;
+      margin-bottom: 6px;
       width: 100%; } }
   @media (max-width: 767px) {
     .page-footer__logo img {
@@ -1248,7 +1245,8 @@ a {
           -ms-flex-direction: row;
               flex-direction: row;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+      margin-bottom: 13px; } }
   @media (max-width: 320px) {
     .page-footer__nav {
       -webkit-box-orient: vertical;
@@ -1258,7 +1256,7 @@ a {
       margin-left: 0; } }
   @media (max-width: 767px) {
     .page-footer__nav li {
-      margin-bottom: 23px; } }
+      margin-bottom: 8px; } }
   .page-footer__nav a {
     color: #ffffff;
     line-height: 20px;
@@ -1266,7 +1264,13 @@ a {
     @media (min-width: 768px) and (max-width: 1023px) {
       .page-footer__nav a {
         font-size: 12px;
-        line-height: 15px; } }
+        line-height: 15px;
+        font-weight: 500; } }
+    @media (max-width: 767px) {
+      .page-footer__nav a {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500; } }
     .page-footer__nav a:hover, .page-footer__nav a:focus {
       opacity: 0.5;
       -webkit-transition: 0.7s ease-out;

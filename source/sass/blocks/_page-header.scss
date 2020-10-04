@@ -70,8 +70,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 148px;
+  margin: 0 auto 148px;
   max-width: 1160px;
 
   @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
@@ -83,11 +82,8 @@
 
   @media (max-width: $max-mobile-width) {
     width: 100%;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px 15px 0;
     margin-bottom: 113px;
-    padding-bottom: 0;
 
     &--show {
       width: 100%;
@@ -140,19 +136,15 @@
   }
 
   h1 {
-    font-size: 54px;
-    line-height: 66px;
-    font-weight: 700;
+    @include font($font-54, $line-height-66, $bold);
     margin: 0;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 50px;
-      line-height: 61px;
+      @include font($font-50, $line-height-61, $bold);
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 36px;
-      line-height: 45px;
+      @include font($font-36, $line-height-45, $bold);
     }
   }
 
@@ -161,13 +153,11 @@
     font-size: 20px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 18px;
-      line-height: 22px;
+      @include font($font-18, $line-height-22, $regular);
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 16px;
-      line-height: 22px;
+      @include font($font-16, $line-height-22, $regular);
     }
   }
 }

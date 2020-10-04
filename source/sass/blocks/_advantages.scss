@@ -25,22 +25,18 @@
   }
 
   h2 {
-    font-size: 28px;
-    line-height: 42px;
-    font-weight: 600;
+    @include font($font-28, $line-height-42, $semi-bold);
     text-align: center;
     margin: 0;
     width: 100%;
     margin-bottom: 49px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 26px;
-      line-height: 39px;
+      @include font($font-26, $line-height-39, $semi-bold);
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 24px;
-      line-height: 36px;
+      @include font($font-24, $line-height-36, $semi-bold);
       margin-bottom: 30px;
     }
   }
@@ -103,9 +99,7 @@
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 500;
+    @include font($font-18, $line-height-25, $medium);
     margin-top: 20px;
     margin-bottom: 10px;
 
@@ -116,9 +110,7 @@
   }
 
   p {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
+    @include font($font-14, $line-height-20, $regular);
     margin: 0;
   }
 

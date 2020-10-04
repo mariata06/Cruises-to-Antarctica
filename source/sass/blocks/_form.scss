@@ -1,7 +1,5 @@
 .form {
-  padding: 50px;
-  padding-top: 44px;
-  padding-bottom: 50px;
+  padding: 44px 50px 50px;
   max-width: 403px;
   background-color: $dark-blue;
 
@@ -15,12 +13,10 @@
   }
 
   p {
+    @include font($font-16, $line-height-25, $medium);
     color: $white;
     margin: 0;
     margin-bottom: 26px;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 500;
   }
 
   input {
@@ -46,10 +42,8 @@
   }
 
   label {
+    @include font($font-13, $line-height-13, $regular);
     color: $light;
-    font-size: 10px;
-    line-height: 13px;
-    font-weight: 400;
     padding-top: 3px;
 
     @media (max-width: $max-mobile-width) {
@@ -110,6 +104,7 @@
   }
 
   button {
+    @include font($font-14, $line-height-21, $semi-bold);
     color: $dark-blue;
     background-color: $white;
     display: block;
@@ -117,9 +112,6 @@
     margin-top: 32px;
     padding-top: 11px;
     padding-bottom: 11px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 600;
     border: none;
     outline: none;
     cursor: pointer;

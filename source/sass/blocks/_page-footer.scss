@@ -143,13 +143,11 @@
     font-weight: 500;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 12px;
-      line-height: 15px;
+      @include font($font-12, $line-height-15, $medium);
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 12px;
-      line-height: 15px;
+      @include font($font-12, $line-height-15, $medium);
     }
 
     &:hover,

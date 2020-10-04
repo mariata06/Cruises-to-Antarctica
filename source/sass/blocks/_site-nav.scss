@@ -49,18 +49,15 @@
   }
 
   a {
+    @include font($font-16, $line-height-20, $medium);
     color: $white;
-    line-height: 20px;
-    font-weight: 500;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 14px;
-      line-height: 17px;
+      @include font($font-14, $line-height-17, $medium);
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 18px;
-      line-height: 22px;
+      @include font($font-18, $line-height-22, $medium);
       color: $dark-blue;
     }
 

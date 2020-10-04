@@ -29,23 +29,19 @@
   }
 
   h2 {
+    @include font($font-28, $line-height-42, $semi-bold);
     text-align: center;
     width: 100%;
-    font-size: 28px;
-    line-height: 42px;
-    font-weight: 600;
     margin: 0;
     margin-bottom: 50px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      font-size: 26px;
-      line-height: 39px;
+      @include font($font-26, $line-height-39, $semi-bold);
       margin-bottom: 48px;
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 24px;
-      line-height: 36px;
+      @include font($font-24, $line-height-36, $semi-bold);
       margin-bottom: 30px;
     }
   }
@@ -55,52 +51,26 @@
   margin-bottom: 30px;
   height: 386px;
   background-color: $light-blue;
-  //margin-right: 30px;
-  //margin-right: auto;
 
   @media (min-width: 1024px) and (max-width: 1100px) {
     margin-right: 50px;
   }
 
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    //margin-right: 0;
-  }
-
   @media (max-width: $max-mobile-width) {
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
-  /*
-  @media (min-width: 590px) and (max-width: 650px) {
-    margin-right: 50px;
-  }
-  */
-
-  /*
-  &:nth-child(4n+1) {
-    //margin-right: 0;
-  }
-  */
-
   &:last-child {
-    //margin-right: auto;
-
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
       margin-left: auto;
       margin-right: 0;
     }
   }
 
-  /*
-  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-    margin-right: auto;
-  }
-  */
   &:hover {
     .tours__description {
       opacity: 1;
@@ -128,14 +98,12 @@
   }
 
   h3 {
+    @include font($font-18, $line-height-27, $medium);
     position: absolute;
     bottom: 5px;
     left: 30px;
     margin: 0;
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 500;
   }
 }
 
@@ -157,6 +125,7 @@
   }
 
   a {
+    @include font($font-14, $line-height-21, $semi-bold);
     color: $dark-blue;
     background-color: $white;
     width: 100%;
@@ -166,9 +135,6 @@
     padding-top: 10px;
     padding-bottom: 9px;
     cursor: pointer;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 600;
 
     &:hover,
     &:focus {
@@ -182,10 +148,8 @@
   }
 
   p {
+    @include font($font-14, $line-height-20, $regular);
     margin: 0;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
 
     &:nth-child(odd) {
       font-weight: 500;

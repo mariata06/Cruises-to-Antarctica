@@ -42,33 +42,12 @@
 
   var formButton = document.querySelector(".form__button");
   var formCheckbox = document.querySelector(".form__checkbox");
-  /*
-  var checkSubmitButton = function () {
-    //evt.preventDefault();
-    console.log("text");
-
-    if (formCheckbox.checked) {
-      //formButton.disabled = false;
-      formButton.removeAttribute("disabled");
-      //formButton.style.backgroundColor = "green";
-    } else {
-      //formButton.disabled = true;
-      formButton.addAttribute("disabled");
-    }
-  };
-  */
-  //checkSubmitButton();
 
   formCheckbox.addEventListener("change", function () {
-    //evt.preventDefault();
-    //console.log("text");
 
     if (formCheckbox.checked) {
-      //formButton.disabled = false;
       formButton.removeAttribute("disabled");
-      //formButton.style.backgroundColor = "green";
     } else {
-      //formButton.disabled = true;
       formButton.toggleAttribute("disabled");
     }
   });

@@ -32,22 +32,18 @@
   }
 
   h2 {
-    font-size: 28px;
-    line-height: 42px;
-    font-weight: 600;
+    @include font($font-28, $line-height-42, $semi-bold);
     margin: 0;
     margin-top: 16px;
 
     @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      @include font($font-26, $line-height-36, $semi-bold);
       padding-right: 115px;
-      font-size: 26px;
-      line-height: 36px;
       margin-top: -8px;
     }
 
     @media (max-width: $max-mobile-width) {
-      font-size: 24px;
-      line-height: 34px;
+      @include font($font-24, $line-height-34, $semi-bold);
     }
   }
 
