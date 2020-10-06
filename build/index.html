@@ -645,21 +645,21 @@
             <p>
               Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
             </p>
-            <div tabindex="0">
+            <div>
               <label for="name">
-                <input id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
+                <input tabindex="0" class="form__field" id="name" type="text" name="user-name" value="" placeholder="Валерия" required=""></label>
             </div>
-            <div tabindex="0">
+            <div>
               <label for="phone">
-                <input id="phone" type="tel" name="user-phonenumber" value="" required="" placeholder="89236889975" pattern="[0-9]{11}"></label>
+                <input tabindex="0" class="form__field" id="phone" type="tel" name="user-phonenumber" value="" required="" placeholder="89236889975" pattern="[0-9]{11}"></label>
             </div>
-            <div tabindex="0">
+            <div>
               <label for="email">
-                <input id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" required=""></label>
+                <input tabindex="0" class="form__field" id="email" type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" required=""></label>
             </div>
             <div tabindex="0">
-              <input type="checkbox" id="personal-data" name="personal-data" class="visually-hidden form__checkbox" checked="">
-              <label for="personal-data">Я согласен на обработку моих&nbsp;персональных&nbsp;данных</label>
+              <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" checked="">
+              <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих&nbsp;персональных&nbsp;данных</label>
             </div>
             <button type="submit" class="form__button" aria-label="оставить заявку">Оставить заявку</button>
           </form>

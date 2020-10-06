@@ -19,7 +19,7 @@
     margin-bottom: 26px;
   }
 
-  input {
+  .form__field {
     font-family: "Montserrat", "Arial", sans-serif;
     width: 100%;
     padding-top: 14px;
@@ -41,17 +41,10 @@
     }
   }
 
-  label {
+  .form__checkbox-label {
     @include font($font-13, $line-height-13, $regular);
     color: $light;
     padding-top: 3px;
-
-    @media (max-width: $max-mobile-width) {
-      line-height: 12px;
-    }
-  }
-
-  input[type="checkbox"] + label {
     position: relative;
     padding-left: 24px;
     display: block;
@@ -76,12 +69,13 @@
     }
 
     @media (max-width: $max-mobile-width) {
+      line-height: 12px;
       padding-left: 24px;
       display: block;
     }
   }
 
-  input[type="checkbox"]:checked + label {
+  .form__checkbox:checked + label {
     position: relative;
     padding-left: 24px;
 

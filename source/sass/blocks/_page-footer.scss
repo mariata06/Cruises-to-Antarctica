@@ -51,8 +51,14 @@
 
   @media (max-width: $max-mobile-width) {
     margin-left: 0;
+  }
 
-    svg {
+  svg {
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+      transform: scale(0.8);
+    }
+
+    @media (max-width: $max-mobile-width) {
       transform: scale(0.8);
     }
   }
@@ -72,14 +78,7 @@
       margin-right: 20px;
     }
   }
-
-  svg {
-    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
-      transform: scale(0.8);
-    }
-  }
 }
-
 
 .page-footer__logo {
   height: 38px;
